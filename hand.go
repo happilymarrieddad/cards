@@ -56,3 +56,11 @@ func (h *Hand) HasBlackjack() bool {
 
 	return false
 }
+
+func (h *Hand) Display() (display string) {
+	for _, c := range *h {
+		display += c.val
+	}
+
+	return
+}
